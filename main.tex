@@ -1,0 +1,252 @@
+\documentclass[final]{beamer}
+\usepackage[scale=1.23]{beamerposter} % Use the beamerposter package for laying out the poster
+\usetheme{confposter} % Use the confposter theme supplied with this template
+\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+\newlength{\sepwid}
+\usepackage[export]{adjustbox}
+\usepackage{multicol}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{48in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+\usepackage{graphicx}  % Required for including images
+\usepackage{booktabs} % Top and bottom rules for tables 
+\graphicspath{{figures/}} % Location of the graphics files
+\title{Experimental Test-Bed For Bumblebee-Inspired Channel Selection in an Ad-hoc Network} % Poster title
+\author{Kuldeep Gill} % Author(s)
+\institute{Worcester Polytechnic Institute} % Institution(s)
+
+
+
+\begin{document}
+\addtobeamertemplate{block end}{}{\vspace*{1ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{1ex}} % White space under highlighted (alert) blocks
+\setlength{\belowcaptionskip}{1ex} % White space under figures
+\setlength\belowdisplayshortskip{1ex} % White space under equations
+
+
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+\begin{column}{\onecolwid} % The first column
+
+\begin{alertblock}{Introduction}
+\begin{enumerate}
+\item In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.
+\item Controlling/Alleviating porosity requires knowledge. 
+\end{enumerate}
+\begin{figure}
+\includegraphics[width=\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+ \end{figure}
+\end{alertblock}
+
+\begin{block}{Objective}
+\begin{multicols}{2}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.45\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.45\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.v}
+\end{figure}
+\end{multicols}
+
+\end{block}
+
+\begin{alertblock}{Objective}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+\end{alertblock}
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+\begin{column}{\onecolwid}\vspace{-1.3in} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Methodology}
+\begin{multicols}{2}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+\end{multicols}
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-1.3in} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	METHODS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Results}
+\begin{figure}
+\includegraphics[width=\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure} 
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+
+\begin{alertblock}{Results}
+\begin{figure}
+\includegraphics[width=\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+\end{alertblock} 
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid}\vspace{-1in} % The first column within column 2 (column 2.1)
+
+\begin{block}{Results}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth,keepaspectratio]{placeholder.jpg}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\end{figure}
+\end{block}
+
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-1in} % The second column within column 2 (column 2.2)
+
+\begin{block}{Results}
+\begin{table}
+\caption{In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.}
+\centering
+\begin{tabular}{c c}
+\toprule
+\textbf{Vehicles} &\textbf{Bumblebees}\\\hline
+Channel & Floral Species\\\hline
+Channel Sensing & Bumblebee Foraging\\\hline
+Radio Discovers New Channel & Bumblebee Discovers Flower of Specific Type\\\hline
+Minimum Channel Energy Level & Maximum Nectar Level Per Floral Species \\\hline
+Switching Cost/ Time between channels & Switching Cost/Time between Floral Species\\\hline
+Channel activity over time & Floral Species occupancy over time\\\hline
+Channel-User Distribution & Bee Distribution Across Floral Species\\
+\hline
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid}\vspace{-0.8in} % The third column
+
+
+\begin{block}{Conclusion}
+
+\begin{itemize}
+\item In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.
+
+\item In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.
+\end{itemize}
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Future Work}
+
+\begin{itemize}
+\item In a highly dynamic vehicular environment with varying network topology, it is very difficult to maintain communication between vehicles efficiently.
+\end{itemize}
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{block}{References}
+
+\nocite{*} % Insert publications even if they are not cited in the poster
+\small{\bibliographystyle{unsrt}
+\bibliography{sample}\vspace{0.75in}}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+
+\begin{alertblock}{Acknowledgements}
+
+\small{\rmfamily{This work was supported by the National Science Foundation under Enhancing Access to the Radio Spectrum (EARS) program with the award number 1547291.}} \\
+
+\end{alertblock}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+\vspace{3in}
+\begin{figure}
+\includegraphics[width=0.5\textwidth,right]{logo.png}
+\end{figure}
+\end{column} % End of the third column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+\end{document}
